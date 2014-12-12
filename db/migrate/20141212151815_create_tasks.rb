@@ -4,8 +4,7 @@ class CreateTasks < ActiveRecord::Migration
   		t.string :name, null: false
   		t.string :description, null: false
   		t.integer :user_id
-  		t.integer :project_id
-
+  		t.integer :project_id, null: false
   	end
   end
 end
